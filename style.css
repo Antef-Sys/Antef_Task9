@@ -141,21 +141,23 @@ main {
   
 
 
-.btn button{
-   
+.btn button {
     height: 50px;
-    width: 175px;
+    width: 180px;
     border-radius: 12px;
     border: none;
     color: white;
     background: rgb(92, 168, 239);
     cursor: pointer;
-} 
 
-.btn button:hover{
-    transform: scale(1.2) rotate(15deg);
-    transition: 1s;
-    box-shadow: 2px 2px 5px gray;
+    /* Smooth animation */
+    transition: all 0.4s ease;
+}
+
+.btn button:hover {
+    transform: scale(1.2) rotate(-15deg) skewX(5deg);
+    background: rgb(0, 140, 255); /* color change */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 @media (min-width:555px) and (max-width:768px) {
