@@ -153,8 +153,9 @@ main {
 } 
 
 .btn button:hover{
-    transform: scale(1.2) rotate3d(-1, -1, -1, 20deg);
+    transform: scale(1.2) rotate(-5deg);
     transition: 1s;
+    box-shadow: 2px 2px 5px gray;
 }
 
 @media (min-width:555px) and (max-width:768px) {
