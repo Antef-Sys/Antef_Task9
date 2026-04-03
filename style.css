@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+body{
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(7, 120, 234);
+    padding: 0 20px;   /* ✅ instead of margins */
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Middle Navigation */
+.mid {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.nav-links li {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    color: #ffd700;
+}
+
+/* Username */
+.uname {
+    background: rgb(205, 235, 245);
+    padding: 18px 45px;
+    border-radius: 10px;
+}
+
+.uname p {
+    color: rgb(18, 168, 218);
+    font-size: 20px;
+} 
+
+
+
+/* MAIN AREA */
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;   
+    height: 500px;  
+}
+
+.left {
+    
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.right {
+    
+    right: 0;
+    width: 100%;
+    height: 100%;
+     
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.heading{
+    margin-top: 20px;
+   font-size: 24px;
+   background: rgb(247, 247, 247);;
+   color: gray;
+}
+
+.mid-contant{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  
+}
+
+.mid-contant h1{
+    
+    color: rgb(18, 168, 218);
+    font-size: 45px;
+}
+
+.mid-contant p{
+    
+    color: gray;
+}
+  
+
+
+.btn button{
+   
+    height: 50px;
+    width: 175px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background: rgb(92, 168, 239);
+    cursor: pointer;
+} 
+
+.btn button:hover{
+    transform: scale(1.2) rotate3d(-1, -1, -1, 20deg);
+    transition: 1s;
+}
+
+@media (min-width:555px) and (max-width:768px) {
+    
+    .navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1;
+    background: rgb(7, 120, 234);
+    }
+
+    
+
+/* Logo */
+.logo {
+    width: 60px;
+    
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Middle Navigation */
+.mid {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 7px;
+    
+   
+    
+}
+
+.nav-links li {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.nav-links li:hover {
+    color: #ffd700;
+}
+
+.uname {
+    background: rgb(205, 235, 245);
+    padding: 16px 35px;
+    border-radius: 10px;
+}
+
+.uname p {
+    color: rgb(18, 168, 218);
+    font-size: 20px;
+} 
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;   
+    height: 500px;  
+    margin-bottom: 200px;
+}
+
+.left {
+    
+    width: 100%;
+    height: 100%;
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.right {
+    
+    width: 100%;
+    height: 100%;
+     
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.heading{
+    
+   font-size: 18px;
+   background: rgb(247, 247, 247);;
+   color: gray;
+   
+}
+
+.mid-contant{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mid-contant h1{
+    
+    color: rgb(18, 168, 218);
+    font-size: 35px;
+    
+}
+
+}
+
+@media  (max-width:555px){
+    
+    
+    .navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1;
+    background: rgb(7, 120, 234);
+    }
+    
+
+    .mid{
+        display: none;
+    }
+
+/* Logo */
+.logo {
+    width: 80px;
+    
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.uname {
+    background: rgb(205, 235, 245);
+    padding: 18px 45px;
+    border-radius: 10px;
+    }
+
+.uname p {
+    color: rgb(18, 168, 218);
+    font-size: 20px;
+} 
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction:column;
+    width: 100%;   
+    height: 100%;  
+}
+
+.left {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+}
+
+
+.right {
+    
+    right: 0;
+    width: 100%;
+    height: 100%;
+     
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.heading{
+    margin-top: 20px;
+   font-size: 24px;
+   background: rgb(247, 247, 247);;
+   color: gray;
+}
+
+.mid-contant{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  
+}
+
+.mid-contant h1{
+    
+    color: rgb(18, 168, 218);
+    font-size: 45px;
+}
+
+.mid-contant p{
+    
+    color: gray;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.btn button{
+   
+    height: 50px;
+    width: 175px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background: rgb(92, 168, 239);
+    cursor: pointer;
+} 
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger button */
+.menu-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Sidebar (hidden by default) */
+.sidebar {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: rgb(5, 39, 83);
+
+    transform: translateX(100%);   /* hidden */
+    transition: transform 0.3s ease;
+}
+
+/* Show sidebar when checked */
+#menu-toggle:checked + .menu-btn + .sidebar {
+    transform: translateX(0);
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+   
+}
+
+/* MOBILE ONLY */
+@media (max-width: 554px) {
+    .mid {
+        display: none;   /* hide desktop nav */
+    }
+
+    .men {
+        display: block;  /* show hamburger */
+    }
+}
+
+/* DESKTOP ONLY */
+@media (min-width: 555px) {
+    .men {
+        display: none;   /* hide hamburger */
+    }
+}
+
